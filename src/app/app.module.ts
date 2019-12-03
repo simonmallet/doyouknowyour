@@ -3,14 +3,26 @@ import { NgModule } from '@angular/core';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
+import { FeaturedMessageComponent } from './featured-message/featured-message.component';
+import { LanguageSelectorComponent } from './language-selector/language-selector.component';
+import { DifficultySelectorComponent } from './difficulty-selector/difficulty-selector.component';
+import { PlayAreaComponent } from './play-area/play-area.component';
+import { ScoreComponent } from './score/score.component';
+import {HttpClientModule} from '@angular/common/http';
 
 @NgModule({
   declarations: [
-    AppComponent
+    AppComponent,
+    FeaturedMessageComponent,
+    LanguageSelectorComponent,
+    DifficultySelectorComponent,
+    PlayAreaComponent,
+    ScoreComponent
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]
