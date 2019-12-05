@@ -2,5 +2,14 @@
   <div class="header">
     <h2>Who's that Pokemon?</h2>
   </div>
-  <img class="pokemon-image" [src]="pokemonImg"/>
+  <div>
+    <img class="pokemon-image" [src]="pokemonImg"/>
+  </div>
+  <div>
+    <ul>
+      <li *ngFor="let choice of pokemonChoices">
+        {{ choice }}
+      </li>
+    </ul>
+  </div>
 </div>

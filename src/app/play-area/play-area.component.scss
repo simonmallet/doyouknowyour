@@ -1,5 +1,6 @@
 .pokemon-image {
-  max-width: 300px;
+  max-width: calc(100% - 40px);
+  margin: 0 20px;
 }
 
 .play-area {
