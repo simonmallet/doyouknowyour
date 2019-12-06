@@ -3,9 +3,11 @@
   margin: 0;
   flex-direction: column;
   align-items: center;
+  height: 100vh;
 
   .quiz {
     display: flex;
     flex-direction: row;
+    height: 100vh;
   }
 }
