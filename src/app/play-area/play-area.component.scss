@@ -1,14 +1,14 @@
 .pokemon-image {
   max-width: calc(100% - 40px);
+  max-height: 320px;
   margin: 0 20px;
 }
 
 .play-area {
-  background-color: darkcyan;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  height: 100vh;
+  height: 100%;
 
   .header {
     color: white;
