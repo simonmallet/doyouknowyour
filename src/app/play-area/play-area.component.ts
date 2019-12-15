@@ -37,4 +37,8 @@ export class PlayAreaComponent implements OnInit {
       console.log(this.pokemonChoices);
     });
   }
+
+  public checkAnswer() {
+    console.log('got here...');
+  }
 }

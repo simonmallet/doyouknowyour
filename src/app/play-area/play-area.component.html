@@ -6,7 +6,7 @@
     <img class="pokemon-image" [src]="pokemonImg"/>
   </div>
   <div class="answer-choices-container">
-    <div *ngFor="let choice of pokemonChoices">
+    <div *ngFor="let choice of pokemonChoices" (click)="checkAnswer()">
       {{ choice }}
     </div>
   </div>
