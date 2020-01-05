@@ -2,6 +2,13 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
 
+# Installation
+1. Run `npm install`
+
+2. Download file https://veekun.com/static/pokedex/downloads/pokemon-sugimori.tar.gz
+
+3. Place PNG files in a folder under src/assets/images/pokemon
+
 ## Development server
 
 Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The app will automatically reload if you change any of the source files.
