@@ -9,6 +9,7 @@ import { DifficultySelectorComponent } from './difficulty-selector/difficulty-se
 import { PlayAreaComponent } from './play-area/play-area.component';
 import { ScoreComponent } from './score/score.component';
 import {HttpClientModule} from '@angular/common/http';
+import { StatsComponent } from './stats/stats.component';
 
 @NgModule({
   declarations: [
@@ -17,7 +18,8 @@ import {HttpClientModule} from '@angular/common/http';
     LanguageSelectorComponent,
     DifficultySelectorComponent,
     PlayAreaComponent,
-    ScoreComponent
+    ScoreComponent,
+    StatsComponent
   ],
   imports: [
     BrowserModule,

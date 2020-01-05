@@ -7,4 +7,11 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'doyouknowyour';
+
+  public hideOverlay() {
+    const overLayMenu = document.getElementById('open-menu-overlay');
+    const statsMenu = document.getElementById('stats');
+    overLayMenu.classList.remove('shown');
+    statsMenu.classList.remove('shown');
+  }
 }

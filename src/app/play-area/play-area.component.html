@@ -1,13 +1,16 @@
 <div class="play-area">
   <div class="header">
     <h2>Who's that Pokemon?</h2>
+    <a href="javascript:void(0);" class="show-stats" (click)="showStats();">
+      <img src="/assets/images/stats.svg" title="Stats"/>
+    </a>
   </div>
   <div class="pokemon-container">
     <img class="pokemon-image" [src]="pokemonImg"/>
   </div>
   <div class="answer-choices-container">
-    <div *ngFor="let choice of pokemonChoices" (click)="checkAnswer()">
-      {{ choice }}
+    <div *ngFor="let choice of pokemonChoices" (click)="checkAnswer(choice.id)">
+      {{ choice.name }}
     </div>
   </div>
 </div>
