@@ -9,7 +9,9 @@
     <img class="pokemon-image" [src]="pokemonImg"/>
   </div>
   <div class="answer-choices-container">
-    <div *ngFor="let choice of pokemonChoices" (click)="checkAnswer(choice.id)">
+    <div *ngFor="let choice of pokemonChoices"
+         [ngClass]="{'good-answer': choice.id === this.selectedPokemon && showAnswer, 'wrong-answer': choice.id !== this.selectedPokemon && showAnswer}"
+         (click)="checkAnswer(choice.id)">
       {{ choice.name }}
     </div>
   </div>
