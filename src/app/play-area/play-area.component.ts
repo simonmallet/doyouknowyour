@@ -12,8 +12,8 @@ export class PlayAreaComponent implements OnInit {
   private selectedPokemon: number;
   public pokemonImg: string;
   public pokemonChoices = [];
-  public showAnswer = false;
   private pokemonNames: any;
+  private submitted = false;
 
   constructor(private apiService: ApiService) { }
 
@@ -54,7 +54,10 @@ export class PlayAreaComponent implements OnInit {
   }
 
   public checkAnswer(pokemonId: number): void {
-    this.showAnswer = true;
+    if (this.submitted) {
+      return;
+    }
+    this.submitted = true;
     if (pokemonId === this.selectedPokemon) {
       console.log('good pokemon index! (good/wrong)', this.selectedPokemon, pokemonId);
       // @todo: add +1 score & +1 streak
@@ -64,7 +67,7 @@ export class PlayAreaComponent implements OnInit {
     }
 
     setTimeout(() => {
-      this.showAnswer = false;
+      this.submitted = false;
       this.setNextPokemon();
     }, 2000);
   }

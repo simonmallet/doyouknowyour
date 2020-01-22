@@ -10,7 +10,7 @@
   </div>
   <div class="answer-choices-container">
     <div *ngFor="let choice of pokemonChoices"
-         [ngClass]="{'good-answer': choice.id === this.selectedPokemon && showAnswer, 'wrong-answer': choice.id !== this.selectedPokemon && showAnswer}"
+         [ngClass]="{'good-answer': choice.id === this.selectedPokemon && submitted, 'wrong-answer': choice.id !== this.selectedPokemon && submitted}"
          (click)="checkAnswer(choice.id)">
       {{ choice.name }}
     </div>
