@@ -17,3 +17,29 @@
     color: white;
   }
 }
+
+#stats {
+  .title {
+    font-size: 30px;
+  }
+
+  .counter {
+    font-size: 20px;
+  }
+
+  .global {
+    display: flex;
+    flex-direction: row;
+
+    div {
+      flex-grow: 1;
+      .counter {
+        text-align: left;
+      }
+    }
+  }
+
+  div {
+    margin-bottom: 15px;
+  }
+}

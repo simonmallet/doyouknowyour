@@ -1,11 +1,16 @@
 <div id="stats" class="menu">
-  <div>Stats</div>
+  <div class="title">Stats</div>
   <div>Current Streak</div>
-  <div> {{ getCurrentStreak() }}</div>
+  <div class="counter"> {{ getCurrentStreak() }}</div>
   <div>Best Streak</div>
-  <div> {{ getBestStreak() }}</div>
-  <div>Good answers</div>
-  <div>{{ getGoodAnswersCount() }}</div>
-  <div>Wrong answers</div>
-  <div>{{ getWrongAnswersCount()}}</div>
+  <div class="counter"> {{ getBestStreak() }}</div>
+  <div class="title">Global</div>
+  <div class="global">
+    <div>Good</div>
+    <div class="counter">{{ getGoodAnswersCount() }}</div>
+  </div>
+  <div class="global">
+    <div>Wrong</div>
+    <div class="counter">{{ getWrongAnswersCount() }}</div>
+  </div>
 </div>
