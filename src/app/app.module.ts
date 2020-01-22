@@ -10,6 +10,7 @@ import { PlayAreaComponent } from './play-area/play-area.component';
 import { ScoreComponent } from './score/score.component';
 import {HttpClientModule} from '@angular/common/http';
 import { StatsComponent } from './stats/stats.component';
+import {ScoreService} from './services/score.service';
 
 @NgModule({
   declarations: [
@@ -26,7 +27,7 @@ import { StatsComponent } from './stats/stats.component';
     AppRoutingModule,
     HttpClientModule
   ],
-  providers: [],
+  providers: [ScoreService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }

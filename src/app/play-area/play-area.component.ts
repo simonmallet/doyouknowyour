@@ -1,5 +1,6 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
 import {ApiService} from '../api.service';
+import {ScoreService} from '../services/score.service';
 
 @Component({
   selector: 'app-play-area',
@@ -15,7 +16,7 @@ export class PlayAreaComponent implements OnInit {
   private pokemonNames: any;
   private submitted = false;
 
-  constructor(private apiService: ApiService) { }
+  constructor(private apiService: ApiService, private scoreService: ScoreService) { }
 
   ngOnInit() {
     this.apiService.getPokemonNames().subscribe((data) => {
@@ -59,11 +60,9 @@ export class PlayAreaComponent implements OnInit {
     }
     this.submitted = true;
     if (pokemonId === this.selectedPokemon) {
-      console.log('good pokemon index! (good/wrong)', this.selectedPokemon, pokemonId);
-      // @todo: add +1 score & +1 streak
+      this.scoreService.updateScore(true);
     } else {
-      console.log('bad pokemon selection! (good/wrong)', this.selectedPokemon, pokemonId);
-      // @todo: reset streak count to 0
+      this.scoreService.updateScore();
     }
 
     setTimeout(() => {
