@@ -1,6 +1,25 @@
 # Doyouknowyour
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.3.20.
+Do you know your ...? This app is used to generate quizzes about any subject in a modular fashion.
+Although during development it currently works only for pokemons, eventually you will be able to use this backbone app
+to suit your needs for other subjects like : Animals, Famous Quotes, TV titles, etc.
+The only limit will be your creativity!
+
+This app is being developed with Angular 8.
+
+Important: This app is being developed using MOBILE FIRST methodology. Tablets and desktops views are currently not implemented.
+
+Current features
+1. Fetch list of pokemons & corresponding pictures
+2. Display a random pokemon with multiple answers (3)
+3. Update score with best/current streak, good/wrong answers counter
+
+Upcoming features (not necessarily in implementation order)
+1. A timer to view current play time
+2. Multi language support (French, English)
+3. Difficulty settings
+4. Global leaderboard
+5. And more! 
 
 # Installation
 1. Run `npm install`
