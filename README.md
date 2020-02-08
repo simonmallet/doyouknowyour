@@ -24,9 +24,7 @@ Upcoming features (not necessarily in implementation order)
 # Installation
 1. Run `npm install`
 
-2. Download file https://veekun.com/static/pokedex/downloads/pokemon-sugimori.tar.gz
-
-3. Place PNG files in a folder under src/assets/images/pokemon
+2. Run `./install.sh` to install the pokemon assets images
 
 ## Development server
 
