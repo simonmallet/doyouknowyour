@@ -9,12 +9,14 @@
   transition: all 0.2s;
   overflow-y: auto;
   z-index: 100;
+  display: none;
 }
 
 @media (max-width: 460px) {
   .menu#stats.shown {
     right: 0;
     color: white;
+    display: block;
   }
 }
 
